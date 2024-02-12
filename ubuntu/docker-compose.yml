@@ -1,0 +1,15 @@
+version: "3"
+services:
+  cli:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    networks:
+      - cli
+    ports:
+      - "8100:8100"
+    tty: true
+networks:
+  cli:
+    driver: bridge
