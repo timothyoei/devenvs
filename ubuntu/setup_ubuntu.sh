@@ -5,6 +5,7 @@ set -e
 
 # Add sudo if it's not available
 if ! command -v sudo &> /dev/null; then
+  apt-get update -y
   apt-get install -y sudo
 fi
 

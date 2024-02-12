@@ -1,15 +1,13 @@
 version: "3"
 services:
-  cli:
+  devenv_ubuntu:
     build:
       context: .
-    volumes:
-      - .:/app
     networks:
-      - cli
+      - devenv_ubuntu_network
     ports:
       - "8100:8100"
     tty: true
 networks:
-  cli:
+  devenv_ubuntu_network:
     driver: bridge
