@@ -24,3 +24,6 @@ git clone https://github.com/timothyoei/devenv.git
 
 # Zsh
 sudo apt-get -y install zsh
+
+# Clean up
+rm setup_ubuntu.sh && rm -rf devenv
