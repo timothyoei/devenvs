@@ -1,2 +1,2 @@
 # Development Environments
-Config and scripts for settting up my preferred development environments.
+Config, tools, and scripts for setting up my preferred development environments.
