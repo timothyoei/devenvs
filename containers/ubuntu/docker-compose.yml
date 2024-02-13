@@ -1,13 +1,13 @@
 version: "3"
 services:
-  devenv_ubuntu:
+  ubuntu:
     build:
       context: .
     networks:
-      - devenv_ubuntu_network
+      - ubuntu_network
     ports:
       - "8100:8100"
     tty: true
 networks:
-  devenv_ubuntu_network:
+  ubuntu_network:
     driver: bridge

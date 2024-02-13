@@ -1,9 +1,0 @@
-{
-  "name": "Ubuntu Development Environment",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "devenv_ubuntu",
-  "workspaceFolder": "/playground",
-  "forwardPorts": [
-    8100
-  ]
-}
