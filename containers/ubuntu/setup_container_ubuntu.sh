@@ -15,7 +15,7 @@ git config --global user.name "Timothy Oei"
 git config --global user.email "timothyoei.dev@gmail.com"
 
 # Clone the devenv repository
-git clone https://github.com/timothyoei/devenv.git
+git clone https://github.com/timothyoei/devenvs.git
 
 # Zsh
 # apt-get -y install zsh
