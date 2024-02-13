@@ -17,11 +17,16 @@ git config --global user.email "timothyoei.dev@gmail.com"
 # Clone the devenv repository
 git clone https://github.com/timothyoei/devenvs.git
 
-# Zsh
+# Setup zsh
 apt-get install -y \
   zsh \
   curl
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Customize zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+mv devenvs/common/.zshrc ~/.zshrc
 
 # Clean up
 # rm setup_container_ubuntu.sh && rm -rf devenv
