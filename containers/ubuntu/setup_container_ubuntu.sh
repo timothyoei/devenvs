@@ -18,7 +18,10 @@ git config --global user.email "timothyoei.dev@gmail.com"
 git clone https://github.com/timothyoei/devenvs.git
 
 # Zsh
-# apt-get -y install zsh
+apt-get install -y \
+  zsh \
+  curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 
 # Clean up
 # rm setup_container_ubuntu.sh && rm -rf devenv
