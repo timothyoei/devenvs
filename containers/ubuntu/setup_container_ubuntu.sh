@@ -30,4 +30,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 cat devenvs/common/.zshrc > ~/.zshrc
 
 # Clean up
-rm setup_container_ubuntu.sh && rm -rf devenv
+rm setup_container_ubuntu.sh && rm -rf devenvs
