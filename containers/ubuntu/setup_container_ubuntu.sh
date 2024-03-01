@@ -19,9 +19,11 @@ git clone https://github.com/timothyoei/devenvs.git
 
 # Setup cli
 apt-get install -y \
-  neovim \
   zsh \
-  curl
+  neovim \
+  curl \
+  bat \
+  fd-find
 
 # Customize zsh
 yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
